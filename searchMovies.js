@@ -33,7 +33,7 @@ function SearchMovies(){
     console.log(movies)
         
     return (
-        <>         
+        <React.Fragment>         
         <form className="form">
             <label className="label" htmlFor="query">Movie Name</label>
             <input className="input" type="text" name="query"
@@ -54,7 +54,7 @@ function SearchMovies(){
         : 
             <p className="info-msg">Please enter a movie name on the search field.</p>
        }
-        </>
+        </React.Fragment>
     )
 }
 

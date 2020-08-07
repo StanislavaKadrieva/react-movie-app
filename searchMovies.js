@@ -28,7 +28,7 @@ function SearchMovies(){
         fetch(`https://api.themoviedb.org/3/search/movie?api_key=7de083846468a9954610b067723e4a8a&language=en-US&query=${query}&page=1&include_adult=false`)
             .then(res => res.json())
             .then(data => setMovies(data.results))
-    }, [clicked])
+    }, [clicked, query])
     
     console.log(movies)
         
